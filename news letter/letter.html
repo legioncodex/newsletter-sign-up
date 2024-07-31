@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="wclassth=device-wclassth, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="./letter.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="right">
+        <h1 class="bold">Stay updated!</h1>
+        <p class="regular">
+          join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul>
+          <span class="span">
+            <span
+              ><img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Eo_circle_deep-orange_checkmark.svg/480px-Eo_circle_deep-orange_checkmark.svg.png"
+                alt=""
+                width="20px"
+            /></span>
+            <span
+              ><li>Product discovery and building what matters</li></span
+            > </span
+          ><span class="span">
+            <span
+              ><img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Eo_circle_deep-orange_checkmark.svg/480px-Eo_circle_deep-orange_checkmark.svg.png"
+                alt=""
+                width="20px"
+            /></span>
+            <span>
+              <li>Measuring to ensure updates are a success</li>
+            </span></span
+          ><span class="span">
+            <span
+              ><img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Eo_circle_deep-orange_checkmark.svg/480px-Eo_circle_deep-orange_checkmark.svg.png"
+                alt=""
+                width="20px"
+            /></span>
+            <span><li>And much more!</li></span>
+          </span>
+        </ul>
+        <div class="bar">
+          <div style="display: flex; justify-content: space-between">
+            <label for="email">Email address </label>
+
+            <span id="error-message" style="color: #ff644e; display: none">
+              Valid email required
+            </span>
+          </div>
+          <input id="email" type="email" placeholder="email@company.com" />
+          <a href="#" onclick="validateEmail()"
+            >Subscribe to monthly newsletter</a
+          >
+        </div>
+      </div>
+      <div id="messagebody">
+        <div id="message">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Eo_circle_deep-orange_checkmark.svg/480px-Eo_circle_deep-orange_checkmark.svg.png"
+            alt=""
+            width="50px"
+          />
+          <p class="head">Thanks for subscribing!</p>
+          <p class="headly">
+            A confirmation email has been sent to
+            <span id="inline-email"></span> .Pleade open it and click the button
+            inside to confirm your subscription
+          </p>
+          <a href="#" onclick="removeMessage()">Dismiss message</a>
+        </div>
+      </div>
+      <div class="image"></div>
+    </div>
+    <script src="./letter.js"></script>
+  </body>
+</html>
